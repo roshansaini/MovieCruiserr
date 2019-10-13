@@ -11,7 +11,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <title>Movie-List-Admin</title>
 </head>
 
 <body>
@@ -22,26 +22,34 @@
                 Movie Cruiser&nbsp;
                 <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mt-2 mt-lg-0" style="margin-right:20px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="movie-list-admin.html" style="color: white;text-decoration: underline;">Movies</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="hidden" name="logout">
+                    <button class="btn my-2 my-sm-0" type="submit"
+                        style="border:1px solid brown;background-color:brown;color: yellow;">Logout</button>
+                </form>
+            </div>
         </nav>
 
         <section style="padding-top: 20px;padding-bottom: 20px;">
-            <div class="card col-md-6 offset-md-3" style="margin-top: 20px;margin-bottom: 20px;">
-
-                <div class="card-body">
-                    <form action="login" method="get" class="col-md-10 offset-md-1" style="margin: 30px auto;color: gray;">
-                        <div class="form-group">
-                            <label class="userId">UserName</label>
-                            <input type="text" name="userName" id="userId" required class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label class="userpass">Password</label>
-                            <input type="password" name="userPass" id="userpass" required class="form-control">
-                        </div>
-                        <input type="submit" class="btn" value="Login"
-                            style="background-color: steelblue;color: white;width: 150px;">
-                    </form>
+            <form class="col-md-10 offset-md-1" style="margin: 30px auto;color: gray;">
+                <div class="form-group">
+                    <label class="heading">Edit Movie</label>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="status" style="font-weight: bold;color: green;">Movie details saved successfully.</label>
+                </div>
+            </form>
         </section>
 
         <footer class="footer mt-auto py-3" style="background-color: rgb(240, 240, 240);">
